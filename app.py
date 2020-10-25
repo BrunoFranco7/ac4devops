@@ -11,11 +11,12 @@ def nao_entre_em_panico():
 	limite = 50
 	found = 0
 	resposta = "0,"
-	while(found < limite):
+	while (found < limite):
 		tmp = proximo
 		proximo = proximo + anterior
 		anterior = tmp
 		found=found+1
+		resposta+= str(proximo) + ","
 
 	return resposta
 
